@@ -1,5 +1,5 @@
-🌞⚡ SOLAR CHEAT SCAN — Project Summary (Clean & Attractive)
-🌐 About the Project
+🌞⚡ **SOLAR CHEAT SCAN**
+ **About the Project**
 
 🔹 AI-powered system to verify, validate, and protect solar forecast data
 
@@ -8,7 +8,7 @@
 🔹 Combines forecasting + anomaly detection + classification in one pipeline
 
 🔹 Ensures trust, transparency, and reliability in renewable energy systems
-
+--------------------------------------------------------------------------------
 ⚠️ Problem Identification
 
 ❌ No system verifies if solar forecasts are authentic or tampered
@@ -18,8 +18,8 @@
 ❌ Wrong forecasts lead to financial loss, grid imbalance, poor planning
 
 ❌ Existing ML models behave like black boxes with no explainability
-
-🎯 Objectives
+--------------------------------------------------------------------------------
+ **Objectives**
 Primary Goals
 
 ✔️ Predict accurate AC power using ML
@@ -35,8 +35,8 @@ Secondary Goals
 ✔️ Visual dashboard for insights
 
 ✔️ SHAP explainability for transparency
-
-📚 Literature Review
+---------------------------------------------------------------------------------------------------
+**Literature Review**
 
 🔸 Existing works focus only on forecast accuracy, not tamper detection
 
@@ -50,13 +50,13 @@ Deviation scoring
 
 Classification
 
-🧭 Defining the Objective
+**Defining the Objective**
 
-🎯 Build an AI system to predict, detect, explain, and visualize solar data tampering
+ Build an AI system to predict, detect, explain, and visualize solar data tampering
 
-🎯 Ensure data integrity & reliability for solar plants
+ Ensure data integrity & reliability for solar plants
 
-📝 Proposed Plan (Short)
+ Proposed Plan (Short)
 
 🔹 Collect solar + weather datasets
 
@@ -72,7 +72,7 @@ Classification
 
 🔹 Develop interactive dashboard
 
-🏗️ System Architecture (Short)
+**System Architecture**
 Input
 
 🌤️ Solar AC power data
@@ -93,8 +93,8 @@ Output
 
 🔄 Workflow
 Data → Cleaning → Features → Forecast → Deviation → Tamper Detection → Future Forecast → Dashboard
-
-🧰 Technology Used
+--------------------------------------------------------------------------------------------------------------------
+**Technology Used**
 
 🐍 Python
 
@@ -113,8 +113,8 @@ Data → Cleaning → Features → Forecast → Deviation → Tamper Detection �
 🔹 Classification: LR, SVM, RF, XGB, Stacking
 
 🔹 Tamper Logic: Deviation-based scoring
-
-📊 Results (Short)
+---------------------------------------------------------------------------------------------------------------
+**Results**
 Regression
 
 ⭐ R² = 1.000
@@ -139,8 +139,8 @@ Dashboard
 📆 15-day AC power forecast
 
 🔥 Tamper score heatmap
-
-🏁 Conclusion
+---------------------------------------------------------------------------------------------
+**Conclusion**
 
 🌟 Solar Cheat Scan delivers AI-driven data integrity for solar forecasting
 
