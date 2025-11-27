@@ -1,16 +1,7 @@
 🌞⚡ SOLAR CHEAT SCAN
 🔍 AI-Powered Solar Forecast Tamper Detection System
 🚀 Because Renewable Energy Deserves Truth, Transparency & Trust.
-<div align="center">
-
-
-
-
-
-
-
-
-</div>
+ 
 🌐 Revolutionizing Solar Data Integrity
 
 Solar power plants across the world rely on forecasted energy values for planning, billing, scheduling, and trading.
