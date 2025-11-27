@@ -1,149 +1,113 @@
-🌞⚡ **SOLAR CHEAT SCAN**
- **About the Project**
+**SOLAR CHEAT SCAN** 
+About the Project
 
-🔹 AI-powered system to verify, validate, and protect solar forecast data
+AI system to verify and protect solar forecast data.
 
-🔹 Detects manipulated, faulty, or suspicious AC power readings
+Detects manipulated or suspicious AC power values.
 
-🔹 Combines forecasting + anomaly detection + classification in one pipeline
+Integrates forecasting, anomaly detection, and classification.
 
-🔹 Ensures trust, transparency, and reliability in renewable energy systems
---------------------------------------------------------------------------------
-⚠️ Problem Identification
+Ensures transparency and reliability in renewable energy systems.
 
-❌ No system verifies if solar forecasts are authentic or tampered
+Problem Identification
 
-❌ Manipulation is hard to detect in large solar time-series data
+No system checks whether solar forecasts are genuine or tampered.
 
-❌ Wrong forecasts lead to financial loss, grid imbalance, poor planning
+Manipulation is difficult to detect in large time-series datasets.
 
-❌ Existing ML models behave like black boxes with no explainability
---------------------------------------------------------------------------------
- **Objectives**
+Incorrect forecasts cause financial loss and grid mismanagement.
+
+Existing ML models lack explainability.
+
+Objectives
 Primary Goals
 
-✔️ Predict accurate AC power using ML
+Predict accurate AC power using machine learning.
 
-✔️ Detect deviations & compute tamper scores
+Detect deviations and compute tamper scores.
 
-✔️ Classify data as Normal / Tampered
+Classify data as Normal or Tampered.
 
 Secondary Goals
 
-✔️ 15-day AC power forecasting
+Forecast AC power for the next 15 days.
 
-✔️ Visual dashboard for insights
+Provide interpretability using SHAP.
 
-✔️ SHAP explainability for transparency
----------------------------------------------------------------------------------------------------
-**Literature Review**
+Build a visual dashboard for insights.
 
-🔸 Existing works focus only on forecast accuracy, not tamper detection
+Literature Review
 
-🔸 DL models detect anomalies but not deliberate manipulation
+Existing works focus on forecast accuracy, not data authenticity.
 
-🔸 No integrated system combining:
+Anomaly detection exists, but not for deliberate manipulation.
 
-Forecasting
+No combined approach of forecasting + deviation scoring + classification.
 
-Deviation scoring
+Defining the Objective
 
-Classification
+Build an AI system that predicts, detects, and explains tampering in solar data.
 
-**Defining the Objective**
+Ensure data integrity for solar power plants.
 
- Build an AI system to predict, detect, explain, and visualize solar data tampering
+Proposed Plan
 
- Ensure data integrity & reliability for solar plants
+Collect solar and weather data.
 
- Proposed Plan (Short)
+Preprocess and engineer features.
 
-🔹 Collect solar + weather datasets
+Train regression and classification models.
 
-🔹 Preprocess & engineer features
+Calculate tamper scores.
 
-🔹 Train regression & classification models
+Use stacking ensemble for improved accuracy.
 
-🔹 Compute tamper scores
+Forecast AC power for 15 days.
 
-🔹 Build stacking ensemble classifier
+Build a dashboard for results.
 
-🔹 Forecast AC power for next 15 days
+System Architecture
 
-🔹 Develop interactive dashboard
+Input: Solar AC power + weather data
 
-**System Architecture**
-Input
+Processing: Cleaning → Feature Engineering → Regression → Deviation → Classification → Forecasting
 
-🌤️ Solar AC power data
+Output: Normal/Tampered labels, forecast graphs, tamper score plots
 
-🌡️ Weather data (irradiation, humidity, temperature, wind)
+Workflow
 
-Processing
+Data → Cleaning → Features → Forecasting → Deviation → Tamper Detection → Future Forecasting → Dashboard
 
-Cleaning → Feature Engineering → Regression → Deviation → Classification → Forecasting
+Technology Used
 
-Output
+Python
 
-🔍 Normal / Tampered labels
+Pandas, NumPy
 
-📈 Forecast graphs
+Scikit-Learn, XGBoost, LightGBM
 
-🟥 Tamper score visualizations
+Matplotlib, SHAP
 
-🔄 Workflow
-Data → Cleaning → Features → Forecast → Deviation → Tamper Detection → Future Forecast → Dashboard
---------------------------------------------------------------------------------------------------------------------
-**Technology Used**
+Streamlit
 
-🐍 Python
+Core Algorithms
 
-📦 Pandas, NumPy
+Regression: GBR, RFR, XGBR
 
-🤖 Scikit-Learn, XGBoost, LightGBM
+Classification: Logistic Regression, SVM, Random Forest, XGBoost, Stacking
 
-📊 Matplotlib, SHAP
+Tamper Detection: Deviation-based scoring
 
-🖥️ Streamlit Dashboard
+Results
 
-🧠 Core Algorithms
+R² = 1.000 (highly accurate forecasting)
 
-🔹 Regression: GBR, RFR, XGBR
+Stacking model performs best for tamper detection.
 
-🔹 Classification: LR, SVM, RF, XGB, Stacking
+Dashboard clearly highlights tampered points and future trends.
 
-🔹 Tamper Logic: Deviation-based scoring
----------------------------------------------------------------------------------------------------------------
-**Results**
-Regression
+Conclusion
 
-⭐ R² = 1.000
+Solar Cheat Scan ensures reliable, transparent, and tamper-proof solar forecasting.
 
-⭐ RMSE = 0.661, MAE = 0.209
-➡️ Ultra-accurate forecasting
-
-Classification
-
-🥇 Stacking Model = Best for tamper detection
-
-🔹 High recall
-
-🔹 Very low false alarms
-
-Dashboard
-
-📉 Actual vs Predicted curves
-
-🟥 Tampered timestamps highlighted
-
-📆 15-day AC power forecast
-
-🔥 Tamper score heatmap
----------------------------------------------------------------------------------------------
-**Conclusion**
-
-🌟 Solar Cheat Scan delivers AI-driven data integrity for solar forecasting
-
-🌟 Detects hidden manipulation & supports smart-grid reliability
-
-🌟 A complete end-to-end solution for secure renewable energy forecasting
+Detects manipulation, supports smart-grid systems, and strengthens renewable energy data integrity.
