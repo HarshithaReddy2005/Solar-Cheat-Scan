@@ -1,139 +1,107 @@
-**Solar Cheat Scan
-Detection of Tampering in Solar Forecast Data using Machine Learning**
+⚡🌞 Solar Cheat Scan – AI-Powered Solar Data Integrity Platform
 
-Solar Cheat Scan is an AI-driven system that predicts AC power, detects manipulation, and classifies Normal vs Tampered solar data.
-It ensures data integrity, transparency, and reliability in solar forecasting systems.
+A modern AI system that detects manipulated, faulty, or suspicious solar AC power values using machine learning, anomaly detection, and automated tamper scoring.
+Built with Python, Scikit-Learn, XGBoost, LightGBM, Matplotlib, SHAP, and SMOTE.
 
-------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 **Project Overview**
 
-Solar forecast data may get corrupted due to faults or manual tampering.
 
-Existing forecasting models cannot verify authenticity of the data.
 
-This project integrates forecasting + deviation scoring + classification to detect tampering.
 
-Provides explainability and visualization through a dashboard.
 
----------------------------------------------------------------------------------------------------------
 
-📌 **Key Features**
+✨ Features
+🔆 Core Capabilities
 
-Accurate ML-based AC power prediction.
+Predict AC Power using ML regression models
 
-Tamper Score generation using deviation logic.
+Detect manipulated AC power using a tamper score
 
-Normal/Tampered classification using ML models.
+Auto-flag suspicious or abnormal solar readings
 
-15-day AC power forecasting.
+Graph comparison: Actual vs Predicted Power
 
-SHAP-based model interpretability.
+Automatic threshold-based anomaly detection
 
-Interactive Streamlit dashboard for monitoring.
+Clean UI for solar operators and auditors
 
-------------------------------------------------------------------------------------------------
+🤖 Machine Learning Features
 
-📌 **Problem Statement**
+Gradient Boosting Regressor — best model for AC power prediction
 
-No existing system validates solar forecast data before usage.
+Random Forest & XGBoost for comparison
 
-Hard to detect manipulation in large, nonlinear time-series datasets.
+Stacking Ensemble Classifier — best for tamper detection
 
-Incorrect data leads to financial loss and grid mismanagement.
+SMOTE for imbalance correction
 
----------------------------------------------------------------------------------------------
+SHAP for explainability
 
-📌 **Objectives**
-Primary
+Full preprocessing pipeline
 
-Predict expected AC power using regression models.
+🔐 Security Features
 
-Detect deviations & compute tamper scores.
+Consistency checks for solar data
 
-Classify data as Normal or Tampered.
+Tamper detection based on power deviations
 
-Secondary
+Threshold-based suspicious label generation
 
-15-day future AC power forecasting.
+Validation against unrealistic AC/DC values
 
-Provide explainability via SHAP.
+🚀 Quick Start
+Prerequisites
 
-Build an interactive dashboard.
+Python 3.10+
 
-----------------------------------------------------------------------------------------------
+pip
 
-📌 **Literature Review**
+Solar dataset (AC Power, DC Power, Irradiance, Temperature…)
 
-Past research focuses mainly on forecast accuracy.
+Installation
 
-Anomaly detection models do not target intentional manipulation.
+Clone the repository
 
-No integrated pipeline combining:
+git clone https://github.com/HarshithaReddy2005/solar-cheat-scan
+cd solar-cheat-scan
 
-Prediction
 
-Deviation scoring
+Install packages
 
-Tamper classification
+pip install -r requirements.txt
 
-------------------------------------------------------------------------------------------
 
-📌 **Methodology**
+Run application
 
-Collect solar AC power + weather data.
+python app.py
 
-Clean, merge, and preprocess the dataset.
 
-Perform feature engineering (rolling, lag, time-based features).
+Upload dataset → View predictions → See tamper detection results
 
-Train regression models for AC power prediction.
+📁 Project Structure
+solar-cheat-scan/
+│── app.py                 # Main interface (Streamlit/Flask)
+│── train_regression.py    # Regression model training
+│── train_classifier.py    # Classification (tamper detection)
+│── shap_analysis.py       # SHAP explainability
+│── preprocess.py          # Cleaning, encoding, scaling
+│── predict.py             # Model inference
+│── requirements.txt
+│── README.md
+└── data/                  # Sample datasets
 
-Calculate deviation = |Actual – Predicted| → Tamper Score.
+📊 Model Workflow
+1. Preprocessing
 
-Train classification & stacking models for tamper detection.
+Handle missing values
 
-Forecast AC power for 15 days.
+Normalize numerical data
 
-Visualize outputs through a dashboard.
+Label encode categories
 
---------------------------------------------------------------------------------------------------
+Remove invalid solar readings
 
-📌 **System Architecture**
-
-Input: AC power + weather parameters
-Process:
-Cleaning → Feature Engineering → Regression → Deviation → Classification → Forecasting
-Output:
-
-Normal/Tampered label
-
-Tamper score
-
-15-day forecast
-
------------------------------------------------------------------------------------------------------------------
-
-📌 **Tech Stack**
-
-Python
-
-Pandas, NumPy
-
-Scikit-Learn, XGBoost, LightGBM
-
-Matplotlib, Seaborn
-
-SHAP
-
-Streamlit
-
-Tools: Jupyter, VS Code, GitHub
-
------------------------------------------------------------------------------------------------------------
-
-📌 **Models Used**
-Regression
+2. Regression Models (AC Power Prediction)
 
 Gradient Boosting Regressor (best)
 
@@ -141,7 +109,16 @@ Random Forest Regressor
 
 XGBoost Regressor
 
-Classification
+3. Tamper Detection Logic
+deviation = | actual - predicted |
+tamper_score = deviation
+
+if tamper_score > threshold:
+    label = "Tampered"
+else:
+    label = "Normal"
+
+4. Classification Models
 
 Logistic Regression
 
@@ -153,24 +130,70 @@ XGBoost
 
 Stacking Ensemble (best)
 
-Tamper Logic
-Deviation = |Actual - Predicted|
-Tamper Score = function(deviation)
-Threshold → Normal / Tampered
+5. Explainability
 
----------------------------------------------------------------------------------------------------------------------------------
+SHAP summary plots
 
-📌 **Results**
+Feature importance visualization
 
-R² = 1.000 → Highly accurate AC power prediction.
+🛠️ Commands
+python app.py            # Run UI
+python train_regression.py
+python train_classifier.py
+python shap_analysis.py
 
-Stacking model gives best tamper detection accuracy.
+🎨 UI Features
 
-Dashboard clearly shows deviations and tampered points.
+Upload file section
 
------------------------------------------------------------------------------------------------------------------------------
+Result table with tamper flags
 
-📌 **Conclusion**
+Power curve graph
 
-Solar Cheat Scan is a comprehensive ML-based solution to ensure tamper-proof and reliable solar forecasting.
-It helps solar plants maintain data authenticity, improve decision-making, and protect grid operations.
+Highlighted anomalies
+
+Clean colors & simple layout
+
+📄 License
+
+This project is licensed under MIT License.
+
+To add license in GitHub:
+
+Click Add File → Create New File → Name it LICENSE
+
+Choose template → MIT License
+
+Commit
+
+🤝 Contributing
+
+Fork repository
+
+Create new branch
+
+Commit your changes
+
+Open Pull Request
+
+🙏 Acknowledgments
+
+Python, Scikit-Learn, XGBoost, LightGBM
+
+SHAP for model explainability
+
+Matplotlib for graph visualization
+
+Designed to protect solar energy data integrity
+
+📸 RESULTS (Screenshots)
+
+(Placed at the end as you requested)
+
+Input vs Output View
+
+AC Power Prediction & Tamper Flags
+
+Graph View & Anomaly Detection
+
+Made for secure, transparent, and trustworthy solar power systems ⚡🌞
