@@ -2,7 +2,9 @@
 
 A modern AI system that detects manipulated, faulty, or suspicious solar AC power values using machine learning, anomaly detection, and automated tamper scoring.
 
-✨ FEATURES
+----------------------------------------------------------------------------------------------------
+
+✨ FEATURES<br>
 🔆 CORE CAPABILITIES
 
 ● Predict AC Power using advanced ML regression models<br>
@@ -11,6 +13,8 @@ A modern AI system that detects manipulated, faulty, or suspicious solar AC powe
 ● Graph comparison: Actual vs Predicted Power<br>
 ● Automatic threshold-based anomaly detection<br>
 ● Clean and simple UI for solar operators and auditors
+
+---------------------------------------------------------------------------
 
 🤖 MACHINE LEARNING FEATURES
 
@@ -21,6 +25,8 @@ A modern AI system that detects manipulated, faulty, or suspicious solar AC powe
 ■ SHAP explainability for model transparency
 ■ Full preprocessing pipeline
 
+-------------------------------------------------------------------------------
+
 🔐 SECURITY FEATURES
 
 ○ Consistency checks for solar data
@@ -28,17 +34,9 @@ A modern AI system that detects manipulated, faulty, or suspicious solar AC powe
 ○ Threshold-based suspicious label generation
 ○ Validation against unrealistic AC/DC values
 
-🚀 QUICK START
-PREREQUISITES
-
-● Python 3.10+
-● pip
-● Solar dataset (weather + plant data)
-
+----------------------------------------------------------------------------------------------
  
-
- 
-📊 MODEL WORKFLOW
+ 📊 MODEL WORKFLOW
 1. PREPROCESSING
 
 ● Handle missing values
@@ -74,12 +72,7 @@ else:
 ● SHAP summary plots<br>
 ● Feature importance visualization
 
-📸 RESULTS (SCREENSHOTS)
-
-(Placed at the end as requested)
-
-■ Input vs Output View<br>
-■ AC Power Prediction & Tamper Flags<br>
-■ Graph View & Anomaly Detection
+------------------------------------------------------------------------
+ 
 
 🌞 MADE FOR SECURE, TRANSPARENT & TRUSTWORTHY SOLAR POWER SYSTEMS ⚡
