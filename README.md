@@ -1,6 +1,6 @@
 ⚡🌞 SOLAR CHEAT SCAN – AI-POWERED SOLAR DATA INTEGRITY PLATFORM
 
-A modern AI system that detects manipulated, faulty, or suspicious solar AC power values using machine learning, anomaly detection, and automated tamper scoring.
+A modern ML based system that detects manipulated, faulty, or suspicious solar AC power values using machine learning, anomaly detection, and automated tamper scoring.
 
 ----------------------------------------------------------------------------------------------------
 
@@ -18,20 +18,20 @@ A modern AI system that detects manipulated, faulty, or suspicious solar AC powe
 
 🤖 MACHINE LEARNING FEATURES
 
-■ Gradient Boosting Regressor — Best model for AC Power prediction
-■ Random Forest & XGBoost for comparison
-■ Stacking Ensemble Classifier — Best for tamper detection
-■ SMOTE for imbalance correction
-■ SHAP explainability for model transparency
+■ Gradient Boosting Regressor — Best model for AC Power prediction<br>
+■ Random Forest & XGBoost for comparison<br>
+■ Stacking Ensemble Classifier — Best for tamper detection<br>
+■ SMOTE for imbalance correction<br>
+■ SHAP explainability for model transparency<br>
 ■ Full preprocessing pipeline
 
 -------------------------------------------------------------------------------
 
 🔐 SECURITY FEATURES
 
-○ Consistency checks for solar data
-○ Tamper detection based on power deviation
-○ Threshold-based suspicious label generation
+○ Consistency checks for solar data<br>
+○ Tamper detection based on power deviation<br>
+○ Threshold-based suspicious label generation<br>
 ○ Validation against unrealistic AC/DC values
 
 ----------------------------------------------------------------------------------------------
@@ -39,38 +39,39 @@ A modern AI system that detects manipulated, faulty, or suspicious solar AC powe
  📊 MODEL WORKFLOW
 1. PREPROCESSING
 
-● Handle missing values
-● Normalize numerical data
-● Label encode categories
-● Remove invalid solar readings
+   ● Handle missing values<br>
+   ● Normalize numerical data<br>
+   ● Label encode categories<br>
+   ● Remove invalid solar readings
 
 2. REGRESSION MODELS (AC POWER PREDICTION)
+  
+   ■ Gradient Boosting Regressor (BEST)<br>
+   ■ Random Forest Regressor<br>
+   ■ XGBoost Regressor
 
-■ Gradient Boosting Regressor (BEST)<br>
-■ Random Forest Regressor<br>
-■ XGBoost Regressor
+3. TAMPER DETECTION LOGIC<br>
 
-3. TAMPER DETECTION LOGIC
-deviation = | actual - predicted |
-tamper_score = deviation
-
-if tamper_score > threshold:
-    label = "Tampered"
-else:
-    label = "Normal"
+  **deviation = | actual - predicted | <br>
+  tamper_score = deviation** <br>
+  
+  **if tamper_score > threshold:<br>
+      label = "Tampered"**  <br>
+  **else:<br>
+      label = "Normal"**
 
 4. CLASSIFICATION MODELS
 
-○ Logistic Regression<br>
-○ SVM<br>
-○ Random Forest<br>
-○ XGBoost<br>
-○ Stacking Ensemble (BEST)
+   ○ Logistic Regression<br>
+   ○ SVM<br>
+   ○ Random Forest<br>
+   ○ XGBoost<br>
+   ○ Stacking Ensemble (BEST)
 
 5. EXPLAINABILITY
-
-● SHAP summary plots<br>
-● Feature importance visualization
+ 
+   ● SHAP summary plots<br>
+   ● Feature importance visualization
 
 ------------------------------------------------------------------------
  
