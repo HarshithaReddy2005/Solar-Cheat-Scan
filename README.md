@@ -9,7 +9,7 @@ Built with Python, Scikit-Learn, XGBoost, LightGBM, Matplotlib, SHAP, and SMOTE.
 
 
 
-
+-----------------------------------------------------------------------
 ✨ Features
 🔆 Core Capabilities
 
@@ -24,7 +24,7 @@ Graph comparison: Actual vs Predicted Power
 Automatic threshold-based anomaly detection
 
 Clean UI for solar operators and auditors
-
+---------------------------------------------------------------------------------------
 🤖 Machine Learning Features
 
 Gradient Boosting Regressor — best model for AC power prediction
@@ -38,7 +38,7 @@ SMOTE for imbalance correction
 SHAP for explainability
 
 Full preprocessing pipeline
-
+-------------------------------------------------------------------
 🔐 Security Features
 
 Consistency checks for solar data
@@ -48,7 +48,7 @@ Tamper detection based on power deviations
 Threshold-based suspicious label generation
 
 Validation against unrealistic AC/DC values
-
+---------------------------------------------------------------------------------
 🚀 Quick Start
 Prerequisites
 
@@ -56,7 +56,7 @@ Python 3.10+
 
 pip
 
-Solar dataset (AC Power, DC Power, Irradiance, Temperature…)
+Solar dataset (weather data,plant data)
 
 Installation
 
@@ -80,7 +80,7 @@ Upload dataset → View predictions → See tamper detection results
 
 📁 Project Structure
 solar-cheat-scan/
-│── app.py                 # Main interface (Streamlit/Flask)
+│── app.py                 # Main interface (Streamlit)
 │── train_regression.py    # Regression model training
 │── train_classifier.py    # Classification (tamper detection)
 │── shap_analysis.py       # SHAP explainability
@@ -89,7 +89,7 @@ solar-cheat-scan/
 │── requirements.txt
 │── README.md
 └── data/                  # Sample datasets
-
+---------------------------------------------------------------------
 📊 Model Workflow
 1. Preprocessing
 
@@ -135,12 +135,8 @@ Stacking Ensemble (best)
 SHAP summary plots
 
 Feature importance visualization
-
-🛠️ Commands
-python app.py            # Run UI
-python train_regression.py
-python train_classifier.py
-python shap_analysis.py
+---------------------------------------------------------------
+ 
 
 🎨 UI Features
 
@@ -153,29 +149,12 @@ Power curve graph
 Highlighted anomalies
 
 Clean colors & simple layout
-
+--------------------------------------------------------------------------
 📄 License
 
 This project is licensed under MIT License.
-
-To add license in GitHub:
-
-Click Add File → Create New File → Name it LICENSE
-
-Choose template → MIT License
-
-Commit
-
-🤝 Contributing
-
-Fork repository
-
-Create new branch
-
-Commit your changes
-
-Open Pull Request
-
+ ------------------------------------------------------------------------------
+ 
 🙏 Acknowledgments
 
 Python, Scikit-Learn, XGBoost, LightGBM
@@ -185,7 +164,7 @@ SHAP for model explainability
 Matplotlib for graph visualization
 
 Designed to protect solar energy data integrity
-
+-----------------------------------------------------------------
 📸 RESULTS (Screenshots)
 
 (Placed at the end as you requested)
